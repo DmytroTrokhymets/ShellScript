@@ -1,0 +1,14 @@
+#!/bin/bash			
+if [ -z "$1" ] 
+	then echo "No parameters found. "
+	exit
+fi
+
+ls -R | grep "$1" > info.txt
+
+echo "first five"
+head -5 info.txt
+
+echo "all result search"
+head info.txt
+
